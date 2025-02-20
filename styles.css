@@ -10,15 +10,15 @@ body{
     font-family: Arial, sans-serif;
     background-color: hsl(0, 0%, 15%);
     border-radius: 15px;
-    max-width: 500px;
+    max-width: 90%;
     overflow: hidden;
 }
 
-#display {
+.display {
     width: 100%;
     padding: 20px;
     font-size: 5rem;
-    text-align: center;
+    text-align: left;
     border: none;
     background-color: hsl(0, 0%, 20%);
     color: white;
@@ -32,14 +32,25 @@ body{
 }
 
 button{
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     border-radius: 5px;
     border: none;
-    background-color: hsl(0, 0%, 60%);
+    background-color: hsl(0, 0%, 40%);
     font-size: 3rem;
     font-weight: bold;
     cursor: pointer;
+    color: hsl(0, 0%, 90%);
+}
+
+p {
+    color: white;
+    text-align: center;
+    background-color: hsl(0, 0%, 18%);
+    margin: 0%;
+    padding: 10px;
+    font-weight: bold;
+    letter-spacing: 5px;
 }
 
 button:hover{

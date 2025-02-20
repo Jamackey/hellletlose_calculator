@@ -1,4 +1,5 @@
-const display = document.getElementById("display");
+const displayMetres = document.getElementById("displayMetres");
+const displayMils = document.getElementById("displayMils");
 converted = 0;
 
 function appendToDisplay(input) {
@@ -6,16 +7,15 @@ function appendToDisplay(input) {
         clearDisplay();
         converted = 0;
     }
-    display.value += input;
+    displayMetres.value += input;
 }
 
 function clearDisplay() {
-    display.value = "";
+    displayMetres.value = "";
 }
  
 function calculate() {
-    display.value = kmToMils(display.value);
-    display.value += " mils";
+    displayMils.value = kmToMils(displayMetres.value);
     converted = 1;
 }
 

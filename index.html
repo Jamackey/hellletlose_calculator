@@ -2,13 +2,16 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
         <title>Document</title>
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <div id="calculator">
-            <input id="display" readonly>
+            <input class="display" id="displayMetres" readonly>
+            <p>METRES</p>
+            <input class="display" id="displayMils" readonly>
+            <p>MILS</p>
             <div id="keys">
                 <button onclick="appendToDisplay('1')">1</button>
                 <button onclick="appendToDisplay('2')">2</button>
